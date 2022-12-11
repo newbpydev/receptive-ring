@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import GridWidget from "../components/GridWidget.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -21,18 +22,19 @@ import Card from "../components/Card.astro";
     </main>
 
     <aside class="grid__sidebar">
-      <h2>More Info</h2>
-      <p>
-        Et nonumy vero ut sadipscing. Invidunt sed voluptua sit iusto ipsum
-        nulla dolore iriure dolor magna sadipscing dolores no nonumy dolor
-        lorem. Lorem et qui sit kasd dolor diam justo sed feugait dolor rebum
-        aliquam duo sit sea et invidunt. Dolore nonumy nonummy eos rebum et vero
-        rebum erat odio est ea erat ut labore et et. Diam et rebum vel tempor
-        kasd et rebum sed doming. Dolor no nobis tempor et et sit odio dolor ut
-        adipiscing lorem dolore takimata vel esse no. Erat vel ipsum aliquyam
-        dolor adipiscing et voluptua. Ut minim dolor volutpat dolor ipsum amet
-        labore clita.
-      </p>
+      <GridWidget
+        title="More Info"
+        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis obcaecati quo dolor dicta, id veniam? Perferendis repudiandae porro modi libero corporis? Dolore nisi repellendus optio ducimus sunt quasi non tempora?"
+      />
+      <GridWidget
+        mod="green"
+        title="Check it out!"
+        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis obcaecati quo dolor dicta, id veniam? Perferendis repudiandae porro modi libe"
+      />
+      <GridWidget
+        title="Isn't this fun?"
+        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis obcaecati quo dolor dicta, id veniam? Perferendis repudiandae porro modi libero corporis? Dolore nisi repellendus optio ducimus sunt quasi non tempora?  dicta, id veniam? Perferendis repudiandae porro modi libero corporis? Dolore nisi repellendus"
+      />
     </aside>
   </div>
 </Layout>
