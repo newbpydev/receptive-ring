@@ -8,6 +8,7 @@
   // max-width: 1000px;
   width: min(100% - 40px, 1000px);
   margin-inline: auto;
+  // font-size: 2em;
 
 
   @include u.breakpoint(large) {
@@ -26,9 +27,34 @@
 
   &__main {
     background-color: hsl(240, 99%, 33%);
+
+
+    @include u.breakpoint(medium) {
+      background-color: hsl(120, 100%, 16%);
+    }
+
+    @include u.breakpoint(large) {
+      background-color: hsl(39, 100%, 35%);
+    }
+
+    @include u.breakpoint(large) {
+      background-color: hsl(0, 99%, 28%);
+    }
   }
 
   &__sidebar {
     background-color: hsl(300, 100%, 30%);
+
+    @include u.breakpoint-down(medium) {
+      text-align: center;
+    }
+
+    @include u.breakpoint-down(small) {
+      text-align: right;
+    }
+
+    // @include u.breakpoint(large) {
+    //   text-align: left;
+    // }
   }
 }
